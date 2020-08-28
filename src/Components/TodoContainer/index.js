@@ -15,6 +15,35 @@ class TodoContainer extends React.Component {
     });
   }
 
+  // addTodoItem = (todoItem) => {
+  //   const { todoList } = this.state;
+  //   const currentId = todoList[todoList.length - 1]?.id;
+  //   const todoId = (currentId ?? 0) + 1;
+  //   this.setState({
+  //     todoList: [
+  //       ...todoList,
+  //       { id: todoId, todoItem: todoItem, status: "todo" },
+  //     ],
+  //   });
+  // };
+
+  // updateTodoItem = (todoId, status) => {
+  //   this.setState({
+  //     todoList: this.state.todoList.map((todo) =>
+  //       todo.id === todoId ? { ...todo, status: status } : todo
+  //     ),
+  //   });
+  // };
+
+  // completeTodoItem = (todoId) => {
+  //   this.updateTodoItem(todoId, "completed");
+  // };
+
+  // cancelTodoItem = (todoId) => {
+  //   this.updateTodoItem(todoId, "canceled");
+  // };
+
+
   render() {
     return (
       <div id="todo-container">
